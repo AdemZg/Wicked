@@ -1,0 +1,59 @@
+.login{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: azure;
+    .loginContainer{
+        width: 500px;
+        height: 500px;
+        .card{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 1px -6px 15px -2px rgba(0,0,0,0.38);
+            -webkit-box-shadow: 1px -6px 15px -2px rgba(0,0,0,0.38);
+            -moz-box-shadow: 1px -6px 15px -2px rgba(0,0,0,0.38);
+            form {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+          
+          .formInput {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            label {
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+
+            input {
+              padding: 10px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+          button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin: auto;
+          }
+          .error{
+            font-size: 13px;
+            color: red;
+          }
+        }
+        }
+    }
+}

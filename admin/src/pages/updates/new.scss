@@ -1,0 +1,109 @@
+.new {
+  width: 100%;
+  display: flex;
+
+  .newContainer {
+    flex: 6;
+    .top,
+    .bottom {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      margin: 20px;
+      border-radius: 10px;
+
+      h1 {
+        color: rgb(141, 140, 140);
+        font-size: 30px;
+        padding: 10px;
+      }
+      }
+        form {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 40px;
+          padding: 20px;
+
+          .formInput {
+            width: 40%;
+
+            label {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+
+              .icon {
+                cursor: pointer;
+              }
+            }
+
+            input {
+              width: 100%;
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+            select{
+              width: 100%;
+              padding: 5px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+          .dragzone{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .react-quill{
+              width: 100%;
+            }
+            .show-images{
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
+              padding: 10px;
+              border-bottom: 1px solid lightgray;
+            }
+          }
+          .multi-select{
+            width: 40%;
+            .ant-select{
+              border-bottom: 1px solid black;
+              .ant-select-selector {
+                  border: none;
+                  .ant-select-selection-placeholder{
+                    color: black;
+                  }
+                }
+            }
+            .ant-select:focus{
+              border: 2px solid red;
+            }
+          }           
+          .btn-submit{
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+          .rdw-editor-wrapper{
+            border: 0.5px solid gray;
+          }
+          .rdw-editor-toolbar{
+            border-bottom: 1px solid gray;
+          }
+          .error{
+            font-size: 13px;
+            color: red;
+          }
+          .new .newContainer form button{
+            display: none;
+          }
+        }
+    
+  }
+}

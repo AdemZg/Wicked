@@ -1,0 +1,105 @@
+.single {
+    display: flex;
+    width: 100%;
+    .singleContainer {
+      flex: 6;
+      .top {
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        .left {
+          flex: 1;
+          -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+          box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+          padding: 20px;
+          position: relative;
+  
+          .editButton {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px;
+            font-size: 12px;
+            color: #7451f8;
+            background-color: #7551f818;
+            cursor: pointer;
+            border-radius: 0px 0px 0px 5px;
+          }
+  
+          .item {
+            display: flex;
+            gap: 20px;
+            form {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+          
+          .formInput {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span {
+              font-size: 13px;
+
+            }
+
+            input {
+              padding: 10px;
+              border: none;
+              border-bottom: 1px solid gray;
+            }
+          }
+          button {
+            width: 150px;
+            padding: 10px;
+            border: none;
+            background-color: teal;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin: auto;
+          }
+          .error{
+            font-size: 13px;
+            color: red;
+          }
+        }
+  
+            .itemImg {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+  
+            .details {
+              .itemTitle {
+                margin-bottom: 10px;
+                color: #555;
+              }
+  
+              .detailItem {
+                margin-bottom: 10px;
+                font-size: 14px;
+  
+                .itemKey {
+                  font-weight: bold;
+                  color: gray;
+                  margin-right: 5px;
+                }
+  
+                .itemValue {
+                  font-weight: 300;
+                }
+                .form-display{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
